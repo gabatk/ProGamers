@@ -19,6 +19,7 @@ body {
 
 nav {
 	text-transform: uppercase;
+	z-index: 1;
 
 	.navbar-brand {
 		color: $white;
@@ -61,7 +62,7 @@ header {
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
-		z-index: -2;
+		z-index: 0;
 	}
 
 	.hero-shadow {
@@ -80,7 +81,20 @@ header {
 		height: 100%;
 		padding: 10px;
 		text-align: center;
-		z-index: 1;
+		z-index: -5;
+	}
+
+	.btn-outline-light {
+		text-transform: uppercase;
+	}
+
+	.fa-chevron-down {
+		position: absolute;
+		font-size: 30px;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		color: $white;
 	}
 }
 
