@@ -13,12 +13,29 @@ body {
 	background-color: #444;
 }
 
-.blue-text {
-	color: $blue-color;
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
+}
+
+.main-text {
+	color: $main-color;
+}
+
+.shadow-bg {
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
 	text-transform: uppercase;
+	transition: background-color 0.6s;
 	z-index: 1;
 
 	.navbar-brand {
@@ -27,7 +44,7 @@ nav {
 	}
 
 	.navbar-brand:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 
 	.nav-link {
@@ -35,11 +52,11 @@ nav {
 	}
 
 	.nav-link:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 
 	// .active {
-	//     color: $blue-color;
+	//     color: $main-color;
 	// }
 
 	.fa-bars {
@@ -73,7 +90,7 @@ header {
 		position: absolute;
 		height: 100%;
 		width: 100%;
-		background-color: rgba(24, 22, 22, 0.781);
+		background-color: rgba(0, 0, 0, 0.726);
 		z-index: -3;
 	}
 
@@ -103,6 +120,22 @@ header {
 	}
 }
 
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.aboutus-card-title {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.aboutus-card-text {
+		font-size: 14px;
+	}
+}
+
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -122,6 +155,12 @@ header {
 		p {
 			font-size: 20px;
 		}
+	}
+}
+
+@media (min-width: 992px) {
+	.shadow-bg {
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 }
 
