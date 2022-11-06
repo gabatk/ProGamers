@@ -195,6 +195,50 @@ header {
 	}
 }
 
+.prices {
+	.price-box {
+		padding: 30px;
+		margin: 20px 10px;
+		background-color: $white;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+		transition: transform 0.3s;
+
+		h3 {
+			color: $main-color;
+			text-transform: uppercase;
+		}
+
+		span {
+			font-weight: bold;
+		}
+
+		i {
+			padding: 0 5px;
+			font-size: 24px;
+		}
+
+		button {
+			padding: 10px 20px;
+			text-transform: uppercase;
+		}
+
+		.price-tag {
+			font-weight: bold;
+			font-size: 30px;
+		}
+	}
+	.price-box:hover {
+		transform: scale(1.05);
+	}
+	.price-info {
+		margin-top: 30px;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
 @media (min-width: 375px) {
 	header {
 		h1 {
@@ -224,6 +268,12 @@ header {
 
 	.aboutus-hero {
 		background-image: url(../img/technology-gd3b29dc44_1280.jpg);
+	}
+
+	.prices {
+		.price-info {
+			font-size: 18px;
+		}
 	}
 }
 
