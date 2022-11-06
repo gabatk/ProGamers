@@ -236,6 +236,9 @@ header .fa-chevron-down {
 .team .card i {
   padding: 10px;
 }
+.team .card .card-body {
+  height: 210px;
+}
 .team .card:hover {
   transform: scale(0.96);
 }
@@ -259,6 +262,9 @@ header .fa-chevron-down {
   }
   header p {
     font-size: 20px;
+  }
+  .team .card .card-body {
+    height: 160px;
   }
 }
 @media (min-width: 992px) {
