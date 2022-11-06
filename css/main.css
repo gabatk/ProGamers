@@ -59,6 +59,10 @@ nav .fa-bars {
   color: #fff;
 }
 
+.navbar .nav-link.active {
+  color: #039dff;
+}
+
 header {
   color: #fff;
 }

@@ -60,13 +60,15 @@ nav {
 		color: $main-color;
 	}
 
-	// .active {
-	//     color: $main-color;
-	// }
-
 	.fa-bars {
 		padding: 10px;
 		color: $white;
+	}
+}
+
+.navbar {
+	.nav-link.active {
+		color: $main-color;
 	}
 }
 
