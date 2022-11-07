@@ -209,7 +209,7 @@ header .fa-chevron-down {
 
 .team {
   position: relative;
-  background-image: url(../img/meeting-room-g7591a9860_1920.jpg);
+  background-image: url(../img/meeting-room-ge69b22f6a_640.jpg);
   background-size: cover;
   background-attachment: fixed;
   z-index: 0;
@@ -284,6 +284,53 @@ header .fa-chevron-down {
   text-transform: uppercase;
 }
 
+.contact {
+  position: relative;
+  background-image: url("../img/skyline-gcd713fe63_640.jpg");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+.contact h2 {
+  color: #ddd;
+  font-weight: bold;
+}
+.contact .underline {
+  background-color: .contact .underline lightgray;
+}
+.contact .contact-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background-color: rgba(0, 9, 27, 0.85);
+  z-index: -5;
+}
+.contact .contact-us {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.contact .contact-item {
+  margin: 30px 0;
+}
+.contact .contact-item h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contact .contact-item .social-media {
+  font-size: 26px;
+}
+.contact .contact-item .social-media a {
+  padding: 10px;
+  color: #fff;
+}
+.contact .contact-item .social-media a:hover {
+  color: #ddd;
+}
+
 @media (min-width: 992px) {
   html {
     scroll-padding-top: 72px;
@@ -293,6 +340,12 @@ header .fa-chevron-down {
   }
   .prices .price-info {
     font-size: 18px;
+  }
+  .contact {
+    background-image: url("../img/skyline-g31003395f_1920.jpg");
+  }
+  .contact {
+    background-image: url("../img/skyline-g31003395f_1920.jpg");
   }
 }
 @media (min-width: 1200px) {
