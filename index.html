@@ -20,6 +20,7 @@
 			rel="stylesheet"
 			type="text/css"
 			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<link rel="stylesheet" href="./css/main.css" />
 		<script
 			src="https://kit.fontawesome.com/e3bd443a68.js"
@@ -63,13 +64,24 @@
 			<div class="hero-img">
 				<div class="hero-shadow"></div>
 				<div class="hero-text">
-					<h1>welcome to pro<span class="main-text">gamers</span></h1>
-					<p>the place where we create games with passion</p>
-					<a href="#aboutus" type="button" class="btn btn-outline-light"
+					<h1 data-aos="fade-up" data-aos-delay="200">
+						welcome to pro<span class="main-text">gamers</span>
+					</h1>
+					<p data-aos="fade-up" data-aos-delay="400">
+						the place where we create games with passion
+					</p>
+					<a
+						data-aos="fade-up"
+						data-aos-delay="600"
+						href="#aboutus"
+						type="button"
+						class="btn btn-outline-light"
 						>meet us</a
 					>
 				</div>
-				<a href="#aboutus"><i class="fa-sharp fa-solid fa-chevron-down"></i></a>
+				<a href="#aboutus"
+					><i class="fa-sharp fa-solid fa-chevron-down bounce-top"></i
+				></a>
 			</div>
 		</header>
 
@@ -80,40 +92,58 @@
 					<div class="underline"></div>
 
 					<div class="row">
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div
+							class="col-sm-6 col-md-4 text-center aboutus-hover"
+							data-aos="zoom-in"
+							data-aos-delay="100">
 							<p><i class="fa-solid fa-mobile-screen-button"></i></p>
 							<p class="aboutus-card-title mb-1">mobile gaming</p>
 							<p class="aboutus-card-text">
 								We create games for mobile devices
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div
+							class="col-sm-6 col-md-4 text-center aboutus-hover"
+							data-aos="zoom-in"
+							data-aos-delay="200">
 							<p><i class="fa-solid fa-desktop"></i></p>
 							<p class="aboutus-card-title mb-1">desktop gaming</p>
 							<p class="aboutus-card-text">We develop PC games</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div
+							class="col-sm-6 col-md-4 text-center aboutus-hover"
+							data-aos="zoom-in"
+							data-aos-delay="300">
 							<p><i class="fas fa-file-code"></i></p>
 							<p class="aboutus-card-title mb-1">highest standards</p>
 							<p class="aboutus-card-text">
 								We maintain the highest standards when developing games
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div
+							class="col-sm-6 col-md-4 text-center aboutus-hover"
+							data-aos="zoom-in"
+							data-aos-delay="400">
 							<p><i class="fa-solid fa-paw"></i></p>
 							<p class="aboutus-card-title mb-1">we love animals</p>
 							<p class="aboutus-card-text">
 								All our games are environmentally safe
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div
+							class="col-sm-6 col-md-4 text-center aboutus-hover"
+							data-aos="zoom-in"
+							data-aos-delay="500">
 							<p><i class="fa-solid fa-burger"></i></p>
 							<p class="aboutus-card-title mb-1">we enjoy tasty food</p>
 							<p class="aboutus-card-text">
 								We like to eat well before proceeding with our tasks
 							</p>
 						</div>
-						<div class="col-sm-6 col-md-4 text-center aboutus-hover">
+						<div
+							class="col-sm-6 col-md-4 text-center aboutus-hover"
+							data-aos="zoom-in"
+							data-aos-delay="600">
 							<p><i class="fa-solid fa-champagne-glasses"></i></p>
 							<p class="aboutus-card-title mb-1">great relationships</p>
 							<p class="aboutus-card-text">
@@ -535,6 +565,14 @@
 			type="text/javascript"
 			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 		<script src="./js/slicksettings.js"></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				startEvent: 'DOMContentLoaded',
+				offset: 200,
+				once: true,
+			});
+		</script>
 		<script src="./js/script.js"></script>
 	</body>
 </html>
